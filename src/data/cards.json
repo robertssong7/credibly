@@ -1,0 +1,74 @@
+[
+  {
+    "id": "amex-platinum",
+    "display_name": "American Express Platinum Card®",
+    "short_name": "Amex Platinum",
+    "issuer": "American Express",
+    "image_asset": "amex-platinum.png",
+    "country": "US"
+  },
+  {
+    "id": "cap-one-venture-x",
+    "display_name": "Capital One Venture X Rewards Credit Card",
+    "short_name": "Venture X",
+    "issuer": "Capital One",
+    "image_asset": "cap-one-venture-x.png",
+    "country": "US"
+  },
+  {
+    "id": "chase-sapphire-reserve",
+    "display_name": "Chase Sapphire Reserve®",
+    "short_name": "Sapphire Reserve",
+    "issuer": "Chase",
+    "image_asset": "chase-sapphire-reserve.png",
+    "country": "US"
+  },
+  {
+    "id": "citi-aadvantage-executive",
+    "display_name": "Citi / AAdvantage Executive World Elite Mastercard®",
+    "short_name": "Citi AAdvantage Exec",
+    "issuer": "Citi",
+    "image_asset": "citi-aadvantage-executive.png",
+    "country": "US"
+  },
+  {
+    "id": "citi-strata-elite",
+    "display_name": "Citi Strata Elite℠ Card",
+    "short_name": "Citi Strata Elite",
+    "issuer": "Citi",
+    "image_asset": "citi-strata-elite.png",
+    "country": "US"
+  },
+  {
+    "id": "delta-reserve-amex",
+    "display_name": "Delta SkyMiles® Reserve American Express Card",
+    "short_name": "Delta Reserve",
+    "issuer": "American Express",
+    "image_asset": "delta-reserve-amex.png",
+    "country": "US"
+  },
+  {
+    "id": "hilton-aspire",
+    "display_name": "Hilton Honors American Express Aspire Card",
+    "short_name": "Hilton Aspire",
+    "issuer": "American Express",
+    "image_asset": "hilton-aspire.png",
+    "country": "US"
+  },
+  {
+    "id": "marriott-brilliant",
+    "display_name": "Marriott Bonvoy Brilliant® American Express® Card",
+    "short_name": "Marriott Brilliant",
+    "issuer": "American Express",
+    "image_asset": "marriott-brilliant.png",
+    "country": "US"
+  },
+  {
+    "id": "united-club",
+    "display_name": "United Club℠ Card",
+    "short_name": "United Club",
+    "issuer": "Chase",
+    "image_asset": "united-club.png",
+    "country": "US"
+  }
+]

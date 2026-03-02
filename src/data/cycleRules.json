@@ -1,0 +1,40 @@
+[
+  {
+    "cycleRuleId": "monthly-calendar",
+    "cadence": "monthly",
+    "boundary": "calendar"
+  },
+  {
+    "cycleRuleId": "quarterly-calendar",
+    "cadence": "quarterly",
+    "boundary": "calendar",
+    "windows": [
+      { "startMonth": 1, "startDay": 1, "endMonth": 3, "endDay": 31 },
+      { "startMonth": 4, "startDay": 1, "endMonth": 6, "endDay": 30 },
+      { "startMonth": 7, "startDay": 1, "endMonth": 9, "endDay": 30 },
+      { "startMonth": 10, "startDay": 1, "endMonth": 12, "endDay": 31 }
+    ]
+  },
+  {
+    "cycleRuleId": "semiannual-calendar",
+    "cadence": "semiannual",
+    "boundary": "calendar",
+    "windows": [
+      { "startMonth": 1, "startDay": 1, "endMonth": 6, "endDay": 30 },
+      { "startMonth": 7, "startDay": 1, "endMonth": 12, "endDay": 31 }
+    ]
+  },
+  {
+    "cycleRuleId": "annual-calendar",
+    "cadence": "annual",
+    "boundary": "calendar",
+    "windows": [
+      { "startMonth": 1, "startDay": 1, "endMonth": 12, "endDay": 31 }
+    ]
+  },
+  {
+    "cycleRuleId": "annual-cardmember",
+    "cadence": "cardmember",
+    "boundary": "cardmember"
+  }
+]
