@@ -12,7 +12,7 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "cd dist && git init && git add . && git commit -m \"Deploy\" && git push --force https://github.com/robertssong7/credibly.git master:gh-pages"
   },
   "dependencies": {
     "date-fns": "^4.1.0",

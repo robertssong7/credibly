@@ -5,7 +5,8 @@
     "short_name": "Amex Platinum",
     "issuer": "American Express",
     "image_asset": "amex-platinum.png",
-    "country": "US"
+    "country": "US",
+    "theme": { "from": "#C0C0C0", "to": "#808080", "text": "dark", "accent": "#555555" }
   },
   {
     "id": "cap-one-venture-x",
@@ -13,7 +14,8 @@
     "short_name": "Venture X",
     "issuer": "Capital One",
     "image_asset": "cap-one-venture-x.png",
-    "country": "US"
+    "country": "US",
+    "theme": { "from": "#0D1B2A", "to": "#1B4F72", "text": "light", "accent": "#2980B9" }
   },
   {
     "id": "chase-sapphire-reserve",
@@ -21,7 +23,8 @@
     "short_name": "Sapphire Reserve",
     "issuer": "Chase",
     "image_asset": "chase-sapphire-reserve.png",
-    "country": "US"
+    "country": "US",
+    "theme": { "from": "#0A1628", "to": "#1A3A6B", "text": "light", "accent": "#1E5FAD" }
   },
   {
     "id": "citi-aadvantage-executive",
@@ -29,7 +32,8 @@
     "short_name": "Citi AAdvantage Exec",
     "issuer": "Citi",
     "image_asset": "citi-aadvantage-executive.png",
-    "country": "US"
+    "country": "US",
+    "theme": { "from": "#0D1B3E", "to": "#B22234", "text": "light", "accent": "#CC2936" }
   },
   {
     "id": "citi-strata-elite",
@@ -37,7 +41,8 @@
     "short_name": "Citi Strata Elite",
     "issuer": "Citi",
     "image_asset": "citi-strata-elite.png",
-    "country": "US"
+    "country": "US",
+    "theme": { "from": "#2D0657", "to": "#6A0DAD", "text": "light", "accent": "#7B2FBE" }
   },
   {
     "id": "delta-reserve-amex",
@@ -45,7 +50,8 @@
     "short_name": "Delta Reserve",
     "issuer": "American Express",
     "image_asset": "delta-reserve-amex.png",
-    "country": "US"
+    "country": "US",
+    "theme": { "from": "#00175A", "to": "#C8102E", "text": "light", "accent": "#C8102E" }
   },
   {
     "id": "hilton-aspire",
@@ -53,7 +59,8 @@
     "short_name": "Hilton Aspire",
     "issuer": "American Express",
     "image_asset": "hilton-aspire.png",
-    "country": "US"
+    "country": "US",
+    "theme": { "from": "#1A1200", "to": "#C9A227", "text": "light", "accent": "#C9A227" }
   },
   {
     "id": "marriott-brilliant",
@@ -61,7 +68,8 @@
     "short_name": "Marriott Brilliant",
     "issuer": "American Express",
     "image_asset": "marriott-brilliant.png",
-    "country": "US"
+    "country": "US",
+    "theme": { "from": "#6B0000", "to": "#C9A227", "text": "light", "accent": "#C9A227" }
   },
   {
     "id": "united-club",
@@ -69,6 +77,7 @@
     "short_name": "United Club",
     "issuer": "Chase",
     "image_asset": "united-club.png",
-    "country": "US"
+    "country": "US",
+    "theme": { "from": "#003580", "to": "#0068A8", "text": "light", "accent": "#0068A8" }
   }
 ]

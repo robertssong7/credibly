@@ -13,9 +13,10 @@ const statusConfig: Record<BenefitStatus, { label: string; classes: string }> = 
 
 interface BenefitRowProps {
   benefit: ResolvedBenefitWithMeta
+  accentColor?: string
 }
 
-export function BenefitRow({ benefit }: BenefitRowProps) {
+export function BenefitRow({ benefit, accentColor = '#3B82F6' }: BenefitRowProps) {
   const [showModal, setShowModal] = useState(false)
   const [expanded, setExpanded] = useState(false)
 
@@ -31,6 +32,11 @@ export function BenefitRow({ benefit }: BenefitRowProps) {
     if (isPass) return `${remaining} ${remaining === 1 ? 'pass' : 'passes'}`
     return null
   })()
+
+  const usedPct =
+    template.totalPerCycle !== null && remaining !== null
+      ? Math.min(100, ((template.totalPerCycle - remaining) / template.totalPerCycle) * 100)
+      : 0
 
   return (
     <>
@@ -49,13 +55,11 @@ export function BenefitRow({ benefit }: BenefitRowProps) {
               </p>
             </div>
 
-            {/* Remaining amount */}
             {remainingLabel !== null && (
               <div className="text-right shrink-0">
                 <span
-                  className={`text-lg font-bold ${
-                    remaining === 0 ? 'text-gray-400' : 'text-blue-600'
-                  }`}
+                  className="text-lg font-bold"
+                  style={{ color: remaining === 0 ? '#9CA3AF' : accentColor }}
                 >
                   {remainingLabel}
                 </span>
@@ -64,27 +68,21 @@ export function BenefitRow({ benefit }: BenefitRowProps) {
             )}
           </div>
 
-          {/* Progress bar for credit/pass types */}
           {template.totalPerCycle !== null && remaining !== null && (
             <div className="mt-3 h-1.5 bg-gray-100 rounded-full overflow-hidden">
               <div
-                className="h-full bg-blue-500 rounded-full transition-all"
-                style={{
-                  width: `${Math.min(
-                    100,
-                    ((template.totalPerCycle - remaining) / template.totalPerCycle) * 100
-                  )}%`,
-                }}
+                className="h-full rounded-full transition-all"
+                style={{ width: `${usedPct}%`, backgroundColor: accentColor }}
               />
             </div>
           )}
 
-          {/* Actions */}
           <div className="flex items-center gap-2 mt-3">
             {!isFullyUsed && template.totalPerCycle !== null && (
               <button
                 onClick={() => setShowModal(true)}
-                className="flex-1 bg-blue-50 text-blue-600 rounded-lg py-1.5 text-xs font-medium hover:bg-blue-100 transition-colors"
+                className="flex-1 rounded-lg py-1.5 text-xs font-medium transition-colors"
+                style={{ backgroundColor: `${accentColor}18`, color: accentColor }}
               >
                 + Add Usage
               </button>
@@ -98,7 +96,6 @@ export function BenefitRow({ benefit }: BenefitRowProps) {
           </div>
         </div>
 
-        {/* Expanded description */}
         {expanded && (
           <div className="px-4 pb-4 border-t border-gray-50 pt-3">
             <p className="text-xs text-gray-500 leading-relaxed">{template.description}</p>

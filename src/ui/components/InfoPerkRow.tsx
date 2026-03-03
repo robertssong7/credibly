@@ -4,9 +4,10 @@ import { useStore } from '../../state/store'
 
 interface InfoPerkRowProps {
   benefit: ResolvedBenefitWithMeta
+  accentColor?: string
 }
 
-export function InfoPerkRow({ benefit }: InfoPerkRowProps) {
+export function InfoPerkRow({ benefit, accentColor = '#3B82F6' }: InfoPerkRowProps) {
   const { dispatch } = useStore()
   const [expanded, setExpanded] = useState(false)
   const { template, infoActivated } = benefit
@@ -20,21 +21,27 @@ export function InfoPerkRow({ benefit }: InfoPerkRowProps) {
   }
 
   return (
-    <div className={`bg-white rounded-xl border shadow-sm overflow-hidden ${
-      infoActivated ? 'border-green-200' : 'border-gray-100'
-    }`}>
+    <div
+      className="bg-white rounded-xl border shadow-sm overflow-hidden"
+      style={{ borderColor: infoActivated ? `${accentColor}55` : '#F3F4F6' }}
+    >
       <div className="p-4">
         <div className="flex items-start justify-between gap-3">
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 flex-wrap">
               <span className="text-sm font-semibold text-gray-900">{template.name}</span>
               {infoActivated && (
-                <span className="text-xs px-2 py-0.5 rounded-full font-medium bg-green-100 text-green-700">
-                  Activated
+                <span
+                  className="text-xs px-2 py-0.5 rounded-full font-medium"
+                  style={{ backgroundColor: `${accentColor}18`, color: accentColor }}
+                >
+                  Activated ✓
                 </span>
               )}
             </div>
-            <p className="text-xs text-gray-400 mt-0.5">{template.type === 'status' ? 'Status perk' : 'Informational'}</p>
+            <p className="text-xs text-gray-400 mt-0.5">
+              {template.type === 'status' ? 'Status perk' : 'Informational'}
+            </p>
           </div>
 
           <button
@@ -45,16 +52,17 @@ export function InfoPerkRow({ benefit }: InfoPerkRowProps) {
           </button>
         </div>
 
-        <div className="mt-3 flex items-center gap-2">
+        <div className="mt-3">
           <button
             onClick={handleToggle}
-            className={`flex-1 rounded-lg py-1.5 text-xs font-medium transition-colors ${
+            className="w-full rounded-lg py-1.5 text-xs font-medium transition-colors"
+            style={
               infoActivated
-                ? 'bg-green-50 text-green-600 hover:bg-green-100'
-                : 'bg-gray-50 text-gray-600 hover:bg-gray-100'
-            }`}
+                ? { backgroundColor: `${accentColor}18`, color: accentColor }
+                : { backgroundColor: '#F9FAFB', color: '#6B7280' }
+            }
           >
-            {infoActivated ? "I've activated this ✓" : "Mark as activated"}
+            {infoActivated ? "I've activated this ✓" : 'Mark as activated'}
           </button>
         </div>
       </div>

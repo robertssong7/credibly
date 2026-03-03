@@ -9,7 +9,7 @@
     "currency": "USD",
     "cycleRuleId": "annual-calendar",
     "enrollmentRequired": true,
-    "description": "Up to $200 in statement credits per calendar year for incidental airline fees (checked bags, seat upgrades, in-flight food/drinks) on one selected qualifying airline."
+    "description": "Up to $200 in statement credits per calendar year for incidental airline fees (checked bags, seat upgrades, in-flight food/drinks) on one selected qualifying airline. Select your airline by Jan 31 each year."
   },
   {
     "benefitId": "amex-platinum-hotel",
@@ -33,7 +33,7 @@
     "currency": "USD",
     "cycleRuleId": "monthly-calendar",
     "enrollmentRequired": true,
-    "description": "Up to $20 per month in statement credits for eligible digital entertainment subscriptions including Disney+, Hulu, ESPN+, Peacock, The New York Times, and others."
+    "description": "Up to $20 per month in statement credits for eligible digital entertainment subscriptions including Disney+, Hulu, ESPN+, Peacock, The New York Times, The Wall Street Journal, and SiriusXM."
   },
   {
     "benefitId": "amex-platinum-walmart-plus",
@@ -45,7 +45,7 @@
     "currency": "USD",
     "cycleRuleId": "monthly-calendar",
     "enrollmentRequired": true,
-    "description": "Monthly statement credit covering the cost of a Walmart+ membership ($12.95/month). Must use card to pay for Walmart+ directly."
+    "description": "Monthly statement credit covering the cost of a Walmart+ membership ($12.95/month plus applicable taxes). Must use the Amex Platinum to pay for Walmart+ directly."
   },
   {
     "benefitId": "amex-platinum-uber-cash",
@@ -57,7 +57,7 @@
     "currency": "USD",
     "cycleRuleId": "monthly-calendar",
     "enrollmentRequired": true,
-    "description": "Up to $15 in Uber Cash per month for Uber rides or Uber Eats orders in the US. Bonus $20 in December, making that month worth up to $35."
+    "description": "Up to $15 in Uber Cash per month for Uber rides or Uber Eats orders in the US. December bonus brings that month to $35. Unused Uber Cash does not roll over. Must add card to Uber app."
   },
   {
     "benefitId": "amex-platinum-saks",
@@ -69,7 +69,7 @@
     "currency": "USD",
     "cycleRuleId": "semiannual-calendar",
     "enrollmentRequired": true,
-    "description": "Up to $50 in statement credits at Saks Fifth Avenue per semiannual period (Jan–Jun and Jul–Dec)."
+    "description": "Up to $50 in statement credits at Saks Fifth Avenue per semiannual period (Jan–Jun and Jul–Dec), totaling up to $100/year. Enrollment required through Amex benefits portal."
   },
   {
     "benefitId": "amex-platinum-equinox",
@@ -81,55 +81,7 @@
     "currency": "USD",
     "cycleRuleId": "annual-calendar",
     "enrollmentRequired": true,
-    "description": "Up to $300 per calendar year in statement credits for eligible Equinox memberships or Equinox+ digital subscriptions."
-  },
-  {
-    "benefitId": "amex-platinum-global-entry",
-    "cardId": "amex-platinum",
-    "name": "Global Entry / TSA PreCheck Credit",
-    "type": "credit",
-    "unitType": "usd",
-    "totalPerCycle": 100,
-    "currency": "USD",
-    "cycleRuleId": "annual-cardmember",
-    "enrollmentRequired": false,
-    "description": "Up to $100 statement credit for Global Entry application fee (every 4.5 years) or up to $85 for TSA PreCheck. Credit available once every 4 years per cardmember year."
-  },
-  {
-    "benefitId": "amex-platinum-centurion-lounge",
-    "cardId": "amex-platinum",
-    "name": "Centurion Lounge Access",
-    "type": "pass",
-    "unitType": "passes",
-    "totalPerCycle": null,
-    "currency": null,
-    "cycleRuleId": "annual-calendar",
-    "enrollmentRequired": false,
-    "description": "Unlimited complimentary access to American Express Centurion Lounges for cardmember and up to two guests. Guest access may require spending threshold."
-  },
-  {
-    "benefitId": "amex-platinum-priority-pass",
-    "cardId": "amex-platinum",
-    "name": "Priority Pass Select",
-    "type": "info",
-    "unitType": null,
-    "totalPerCycle": null,
-    "currency": null,
-    "cycleRuleId": "annual-calendar",
-    "enrollmentRequired": true,
-    "description": "Complimentary Priority Pass Select membership providing access to 1,300+ airport lounges worldwide. Enrollment required through the Amex benefits portal."
-  },
-  {
-    "benefitId": "amex-platinum-delta-sky-club",
-    "cardId": "amex-platinum",
-    "name": "Delta Sky Club Access",
-    "type": "pass",
-    "unitType": "passes",
-    "totalPerCycle": 10,
-    "currency": null,
-    "cycleRuleId": "annual-calendar",
-    "enrollmentRequired": false,
-    "description": "Up to 10 complimentary visits per year to Delta Sky Club lounges when flying Delta. Visits above 10 cost $50 each."
+    "description": "Up to $300 per calendar year in statement credits for eligible Equinox memberships or Equinox+ digital fitness subscription. Enrollment required."
   },
   {
     "benefitId": "amex-platinum-clear",
@@ -141,19 +93,79 @@
     "currency": "USD",
     "cycleRuleId": "annual-calendar",
     "enrollmentRequired": false,
-    "description": "Up to $189 per calendar year in statement credits for a CLEAR Plus membership, which provides expedited security at participating airports and venues."
+    "description": "Up to $189 per calendar year in statement credits for a CLEAR Plus membership, providing expedited biometric security screening at 50+ airports and venues. Credit applies automatically."
   },
   {
-    "benefitId": "amex-platinum-global-dining",
+    "benefitId": "amex-platinum-global-entry",
     "cardId": "amex-platinum",
-    "name": "Global Dining Access",
+    "name": "Global Entry / TSA PreCheck Credit",
+    "type": "credit",
+    "unitType": "usd",
+    "totalPerCycle": 100,
+    "currency": "USD",
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": false,
+    "description": "Up to $100 statement credit for Global Entry application fee (valid 5 years) or up to $85 for TSA PreCheck. Available once every 4.5 years. Credit applies automatically when paid with card."
+  },
+  {
+    "benefitId": "amex-platinum-resy-credit",
+    "cardId": "amex-platinum",
+    "name": "$50 Resy Dining Credit",
+    "type": "credit",
+    "unitType": "usd",
+    "totalPerCycle": 50,
+    "currency": "USD",
+    "cycleRuleId": "semiannual-calendar",
+    "enrollmentRequired": true,
+    "description": "Up to $50 in statement credits per semiannual period (Jan–Jun and Jul–Dec) for dining at restaurants that accept Resy reservations. Enrollment required through the Amex app."
+  },
+  {
+    "benefitId": "amex-platinum-centurion-lounge",
+    "cardId": "amex-platinum",
+    "name": "Centurion Lounge Access",
     "type": "info",
     "unitType": null,
     "totalPerCycle": null,
     "currency": null,
     "cycleRuleId": "annual-calendar",
     "enrollmentRequired": false,
-    "description": "Access to Global Dining Access by Resy, providing priority access, exclusive reservations, and unique dining experiences at top restaurants worldwide."
+    "description": "Complimentary access to American Express Centurion Lounges worldwide. Guest access ($50/guest) unless you spent $75,000+ in the prior calendar year, which restores complimentary access for up to 2 guests."
+  },
+  {
+    "benefitId": "amex-platinum-priority-pass",
+    "cardId": "amex-platinum",
+    "name": "Priority Pass Select",
+    "type": "info",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-calendar",
+    "enrollmentRequired": true,
+    "description": "Complimentary Priority Pass Select membership providing unlimited access to 1,300+ airport lounges worldwide. Enrollment required through the Amex benefits portal. Guest fees may apply."
+  },
+  {
+    "benefitId": "amex-platinum-delta-sky-club",
+    "cardId": "amex-platinum",
+    "name": "Delta Sky Club Access",
+    "type": "pass",
+    "unitType": "passes",
+    "totalPerCycle": 10,
+    "currency": null,
+    "cycleRuleId": "annual-calendar",
+    "enrollmentRequired": false,
+    "description": "Up to 10 complimentary Delta Sky Club visits per year when flying on a same-day Delta flight. Visits above 10 cost $50 each. Unlimited access if you spend $75,000+ on the card in a calendar year."
+  },
+  {
+    "benefitId": "amex-platinum-global-dining",
+    "cardId": "amex-platinum",
+    "name": "Global Dining Access by Resy",
+    "type": "info",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-calendar",
+    "enrollmentRequired": false,
+    "description": "Priority access to exclusive reservations, \"notify me\" feature at fully-booked restaurants, and invitations to curated dining experiences at top Resy restaurants worldwide."
   },
   {
     "benefitId": "amex-platinum-marriott-gold",
@@ -165,7 +177,7 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": true,
-    "description": "Complimentary Marriott Bonvoy Gold Elite status, providing 25% bonus points, late checkout when available, and room upgrades when available."
+    "description": "Complimentary Marriott Bonvoy Gold Elite status: 25% bonus points on stays, enhanced room upgrades when available, late checkout when available. Enrollment required."
   },
   {
     "benefitId": "amex-platinum-hilton-gold",
@@ -177,7 +189,19 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": true,
-    "description": "Complimentary Hilton Honors Gold status, providing 80% bonus points, space-available room upgrades, and daily F&B credit at full-service hotels."
+    "description": "Complimentary Hilton Honors Gold status: 80% bonus points, complimentary breakfast or F&B credit at full-service hotels, space-available room upgrades, 5th night free on award stays. Enrollment required."
+  },
+  {
+    "benefitId": "amex-platinum-hertz",
+    "cardId": "amex-platinum",
+    "name": "Hertz President's Circle Status",
+    "type": "status",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": true,
+    "description": "Complimentary Hertz President's Circle status: guaranteed car upgrades, priority counter service, and additional benefits at Hertz locations. Enrollment required through Amex benefits."
   },
 
   {
@@ -190,7 +214,7 @@
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $300 in statement credits per cardmember year for bookings made through Capital One Travel portal."
+    "description": "Up to $300 in statement credits per cardmember year for bookings made through Capital One Travel portal. Applies automatically to eligible travel purchases."
   },
   {
     "benefitId": "venture-x-anniversary-miles",
@@ -202,19 +226,19 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "10,000 bonus miles awarded on each account anniversary, worth approximately $100 in travel. Miles are credited automatically."
+    "description": "10,000 bonus miles awarded each account anniversary, worth $100 toward travel. Miles are credited automatically and never expire while the account is open."
   },
   {
     "benefitId": "venture-x-priority-pass",
     "cardId": "cap-one-venture-x",
-    "name": "Priority Pass Select",
+    "name": "Priority Pass Select (Unlimited)",
     "type": "info",
     "unitType": null,
     "totalPerCycle": null,
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": true,
-    "description": "Complimentary unlimited Priority Pass Select membership for cardmember and up to 2 authorized users, providing access to 1,300+ lounges worldwide."
+    "description": "Complimentary unlimited Priority Pass Select membership for cardmember and authorized users. Access to 1,300+ airport lounges worldwide. Enrollment required through Capital One benefits portal."
   },
   {
     "benefitId": "venture-x-capital-one-lounge",
@@ -226,7 +250,7 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Unlimited complimentary access to Capital One Lounges for cardmember plus 2 guests per visit. Locations in Dallas, Denver, and Dulles."
+    "description": "Unlimited complimentary access to Capital One Lounges (Dallas DFW, Denver DEN, Dulles IAD) for cardmember plus up to 2 guests per visit. Additional guests $45 each."
   },
   {
     "benefitId": "venture-x-global-entry",
@@ -238,7 +262,31 @@
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $100 credit for Global Entry application fee (covers 4-year membership) or up to $85 for TSA PreCheck."
+    "description": "Up to $100 statement credit for Global Entry application fee or up to $85 for TSA PreCheck. Available once every 4 years."
+  },
+  {
+    "benefitId": "venture-x-hertz",
+    "cardId": "cap-one-venture-x",
+    "name": "Hertz President's Circle Status",
+    "type": "status",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": true,
+    "description": "Complimentary Hertz President's Circle elite status: guaranteed upgrades, no blackout dates, and top-tier service. Enrollment required through Capital One."
+  },
+  {
+    "benefitId": "venture-x-cell-phone",
+    "cardId": "cap-one-venture-x",
+    "name": "Cell Phone Protection",
+    "type": "info",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": false,
+    "description": "Up to $800 per claim, $1,600 per year for cell phone theft or damage when you pay your monthly cell phone bill with your Venture X. $50 deductible per claim, max 2 claims per year."
   },
 
   {
@@ -251,7 +299,7 @@
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $300 in statement credits per cardmember year for travel purchases. Applies automatically to a wide range of travel categories including airlines, hotels, rideshare, and more."
+    "description": "Up to $300 in statement credits per cardmember year for travel purchases. Automatically applies to airlines, hotels, car rentals, rideshare, trains, tolls, parking, and more."
   },
   {
     "benefitId": "csr-global-entry",
@@ -263,19 +311,19 @@
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $100 application fee credit for Global Entry (every 4 years) or up to $85 for TSA PreCheck."
+    "description": "Up to $100 application fee credit for Global Entry (every 4.5 years) or up to $85 for TSA PreCheck. Credit applies automatically when you pay with your card."
   },
   {
     "benefitId": "csr-priority-pass",
     "cardId": "chase-sapphire-reserve",
-    "name": "Priority Pass Select",
+    "name": "Priority Pass Select (Unlimited)",
     "type": "info",
     "unitType": null,
     "totalPerCycle": null,
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": true,
-    "description": "Complimentary Priority Pass Select membership with unlimited visits for cardmember plus 2 guests per visit at 1,300+ lounges worldwide."
+    "description": "Complimentary unlimited Priority Pass Select membership. Access to 1,300+ airport lounges plus eligible airport restaurants. Cardmember plus 2 guests included. Enrollment required."
   },
   {
     "benefitId": "csr-doordash-credit",
@@ -287,7 +335,19 @@
     "currency": "USD",
     "cycleRuleId": "monthly-calendar",
     "enrollmentRequired": true,
-    "description": "Up to $5 per month in DashPass credits for DoorDash orders. Requires DashPass membership and enrollment through Chase."
+    "description": "Up to $5 per month in DashPass credits for DoorDash orders. Requires active DashPass membership. Enrollment through Chase benefits portal."
+  },
+  {
+    "benefitId": "csr-instacart-credit",
+    "cardId": "chase-sapphire-reserve",
+    "name": "$15 Monthly Instacart Credit",
+    "type": "credit",
+    "unitType": "usd",
+    "totalPerCycle": 15,
+    "currency": "USD",
+    "cycleRuleId": "monthly-calendar",
+    "enrollmentRequired": true,
+    "description": "Up to $15 per month in Instacart credits plus complimentary Instacart+ membership. Must activate through Chase and add card to Instacart account."
   },
   {
     "benefitId": "csr-lyft-credit",
@@ -299,7 +359,7 @@
     "currency": "USD",
     "cycleRuleId": "monthly-calendar",
     "enrollmentRequired": false,
-    "description": "Up to $10 in Lyft credits per month when paying with your Chase Sapphire Reserve card."
+    "description": "Up to $10 in Lyft credits each month when you pay with your Chase Sapphire Reserve. Plus earn 10x total points on Lyft rides."
   },
   {
     "benefitId": "csr-peloton-credit",
@@ -311,7 +371,7 @@
     "currency": "USD",
     "cycleRuleId": "annual-calendar",
     "enrollmentRequired": false,
-    "description": "Up to $120 per year in statement credits for eligible Peloton App or All-Access Membership purchases."
+    "description": "Up to $120 per year in statement credits for eligible Peloton App or All-Access Membership purchases. Credit applies automatically when paid with card."
   },
   {
     "benefitId": "csr-chase-dining",
@@ -323,7 +383,31 @@
     "currency": null,
     "cycleRuleId": "annual-calendar",
     "enrollmentRequired": false,
-    "description": "Access to Chase Dining powered by Tock for exclusive reservations, culinary experiences, and priority seating at top restaurants."
+    "description": "Access to Chase Dining powered by Tock: exclusive reservations, priority seating, culinary experiences, and chef's table events at top restaurants nationwide."
+  },
+  {
+    "benefitId": "csr-sapphire-lounge",
+    "cardId": "chase-sapphire-reserve",
+    "name": "Chase Sapphire Lounge Access",
+    "type": "info",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": false,
+    "description": "Complimentary access to Chase Sapphire Lounges at select major airports (Boston BOS, Las Vegas LAS, Philadelphia PHL, New York LaGuardia LGA, Hong Kong HKG, and more). Cardmember plus 2 guests."
+  },
+  {
+    "benefitId": "csr-hertz",
+    "cardId": "chase-sapphire-reserve",
+    "name": "Hertz President's Circle Status",
+    "type": "status",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": true,
+    "description": "Complimentary Hertz President's Circle status: guaranteed car upgrades, expedited service, and additional perks at Hertz locations. Enrollment required through Chase."
   },
 
   {
@@ -336,7 +420,7 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Full Admirals Club membership for cardmember and up to 2 guests or immediate family traveling with you. Access to all Admirals Club and partner lounges."
+    "description": "Full Admirals Club membership for cardmember and immediate family (spouse/domestic partner and children under 18) or up to 2 guests per visit. Access to all Admirals Club and partner lounges worldwide."
   },
   {
     "benefitId": "citi-exec-first-checked-bag",
@@ -348,7 +432,7 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "First checked bag free for cardmember and up to 8 companions on the same reservation when flying American Airlines."
+    "description": "First checked bag free for cardmember and up to 8 companions on the same American Airlines reservation. Saves up to $35 per person each way."
   },
   {
     "benefitId": "citi-exec-global-entry",
@@ -356,23 +440,23 @@
     "name": "Global Entry / TSA PreCheck Credit",
     "type": "credit",
     "unitType": "usd",
-    "totalPerCycle": 100,
+    "totalPerCycle": 120,
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $100 credit for Global Entry application fee or up to $85 for TSA PreCheck, once every 5 years."
+    "description": "Up to $120 credit for Global Entry application fee (including processing fee) or up to $85 for TSA PreCheck. Available once every 4.5 years."
   },
   {
-    "benefitId": "citi-exec-aadvantage-miles-boost",
+    "benefitId": "citi-exec-wifi-credit",
     "cardId": "citi-aadvantage-executive",
-    "name": "10,000 Elite Qualifying Miles",
-    "type": "info",
-    "unitType": null,
-    "totalPerCycle": null,
-    "currency": null,
-    "cycleRuleId": "annual-cardmember",
+    "name": "$10 Monthly In-Flight Wi-Fi Credit",
+    "type": "credit",
+    "unitType": "usd",
+    "totalPerCycle": 10,
+    "currency": "USD",
+    "cycleRuleId": "monthly-calendar",
     "enrollmentRequired": false,
-    "description": "Earn 10,000 Elite Qualifying Miles (EQMs) after spending $40,000 on purchases in a cardmember year, helping toward AAdvantage elite status."
+    "description": "Up to $10 per month in statement credits for American Airlines in-flight Wi-Fi purchases. Apply your card at checkout on the flight."
   },
   {
     "benefitId": "citi-exec-priority-boarding",
@@ -384,7 +468,31 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Priority check-in, security screening (where available), and priority boarding for cardmember and up to 8 companions on the same reservation."
+    "description": "Priority check-in, security (where available), and Group 4 boarding for cardmember and up to 8 companions on the same American Airlines reservation."
+  },
+  {
+    "benefitId": "citi-exec-eqm-boost",
+    "cardId": "citi-aadvantage-executive",
+    "name": "10,000 Elite Qualifying Miles Boost",
+    "type": "info",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": false,
+    "description": "Earn 10,000 Elite Qualifying Miles (EQMs) after spending $40,000 in a cardmember year — a boost toward AAdvantage Platinum, Platinum Pro, or Executive Platinum status."
+  },
+  {
+    "benefitId": "citi-exec-inflight-discount",
+    "cardId": "citi-aadvantage-executive",
+    "name": "25% Savings on AA In-Flight Purchases",
+    "type": "info",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": false,
+    "description": "Receive a 25% statement credit when using your card for food, beverages, and Wi-Fi on American Airlines flights — effectively a 25% discount on all in-flight spend."
   },
 
   {
@@ -397,19 +505,19 @@
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $300 in statement credits per cardmember year for travel purchases booked through Citi Travel or directly with airlines and hotels."
+    "description": "Up to $300 in statement credits per cardmember year for travel purchases including airlines, hotels, car rentals, and cruise lines booked through Citi Travel or directly."
   },
   {
     "benefitId": "citi-strata-priority-pass",
     "cardId": "citi-strata-elite",
-    "name": "Priority Pass Select",
+    "name": "Priority Pass Select (Unlimited)",
     "type": "info",
     "unitType": null,
     "totalPerCycle": null,
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": true,
-    "description": "Complimentary Priority Pass Select membership for unlimited lounge access at 1,300+ lounges worldwide."
+    "description": "Complimentary unlimited Priority Pass Select membership for cardmember and authorized users. Access to 1,300+ airport lounges worldwide."
   },
   {
     "benefitId": "citi-strata-global-entry",
@@ -417,11 +525,11 @@
     "name": "Global Entry / TSA PreCheck Credit",
     "type": "credit",
     "unitType": "usd",
-    "totalPerCycle": 100,
+    "totalPerCycle": 120,
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $100 application fee credit for Global Entry or up to $85 for TSA PreCheck."
+    "description": "Up to $120 in statement credits for Global Entry application fee or up to $85 for TSA PreCheck. Applies automatically when paid with card."
   },
   {
     "benefitId": "citi-strata-hotel-credit",
@@ -433,19 +541,31 @@
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $100 discount on a hotel stay of 2+ nights when booked through Citi Travel."
+    "description": "Up to $100 discount on a hotel stay of 2+ nights when booked through Citi Travel. Can be used once per cardmember year."
   },
   {
-    "benefitId": "citi-strata-thank-you-points-boost",
+    "benefitId": "citi-strata-dining-credit",
     "cardId": "citi-strata-elite",
-    "name": "ThankYou Points Travel Redemption Boost",
+    "name": "$7 Monthly Dining Credit",
+    "type": "credit",
+    "unitType": "usd",
+    "totalPerCycle": 7,
+    "currency": "USD",
+    "cycleRuleId": "monthly-calendar",
+    "enrollmentRequired": true,
+    "description": "Up to $7 per month ($84/year) in statement credits for eligible dining purchases at restaurants. Enrollment required through Citi benefits portal."
+  },
+  {
+    "benefitId": "citi-strata-ty-points",
+    "cardId": "citi-strata-elite",
+    "name": "ThankYou Points Redemption Boost",
     "type": "info",
     "unitType": null,
     "totalPerCycle": null,
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Earn 1 ThankYou Point per dollar on all purchases plus boosted earnings on travel and hotel categories. Points transfer to 15+ airline and hotel partners."
+    "description": "Redeem ThankYou Points at 1.25 cents each toward travel, or transfer to 15+ airline and hotel partners. Earn 3x on air, hotels, and attractions; 3x on restaurants; 1x on all other purchases."
   },
 
   {
@@ -458,7 +578,7 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "One companion certificate each cardmember year after renewal. Valid for a companion to travel on a domestic main cabin round-trip ticket purchased with the card."
+    "description": "One companion certificate each cardmember year after renewal for a round-trip domestic main cabin, Comfort+, or First Class ticket on Delta. Taxes and fees from $22+ apply."
   },
   {
     "benefitId": "delta-reserve-sky-club",
@@ -470,7 +590,7 @@
     "currency": null,
     "cycleRuleId": "annual-calendar",
     "enrollmentRequired": false,
-    "description": "Up to 15 complimentary Delta Sky Club visits per year. Additional visits cost $50 each. Unlimited access if spending $75,000+ in a calendar year."
+    "description": "Up to 15 complimentary Delta Sky Club visits per year when flying on a same-day Delta flight. Visits above 15 cost $50 each. Unlimited access if spending $75,000+ on the card in a calendar year."
   },
   {
     "benefitId": "delta-reserve-global-entry",
@@ -482,7 +602,7 @@
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $100 statement credit for Global Entry application fee or up to $85 for TSA PreCheck."
+    "description": "Up to $100 statement credit for Global Entry application fee or up to $85 for TSA PreCheck. Credit applies automatically when paid with card."
   },
   {
     "benefitId": "delta-reserve-first-bag",
@@ -494,7 +614,19 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "First checked bag free for cardmember and up to 8 companions on the same reservation when flying Delta."
+    "description": "First checked bag free for cardmember and up to 8 companions on the same Delta reservation. Saves up to $35 per person each way."
+  },
+  {
+    "benefitId": "delta-reserve-resy-credit",
+    "cardId": "delta-reserve-amex",
+    "name": "$20 Monthly Resy Dining Credit",
+    "type": "credit",
+    "unitType": "usd",
+    "totalPerCycle": 20,
+    "currency": "USD",
+    "cycleRuleId": "monthly-calendar",
+    "enrollmentRequired": true,
+    "description": "Up to $20 per month in statement credits for dining at restaurants that use Resy for reservations. Enrollment required through the Amex app."
   },
   {
     "benefitId": "delta-reserve-rideshare-credit",
@@ -506,19 +638,31 @@
     "currency": "USD",
     "cycleRuleId": "monthly-calendar",
     "enrollmentRequired": true,
-    "description": "Up to $10 per month in statement credits for U.S. rideshare purchases (Uber, Lyft, etc.)."
+    "description": "Up to $10 per month in statement credits for U.S. rideshare purchases (Uber, Lyft, and other qualifying services). Enrollment required."
   },
   {
-    "benefitId": "delta-reserve-medallion-status",
+    "benefitId": "delta-reserve-mqd-boost",
     "cardId": "delta-reserve-amex",
-    "name": "MQD Earn Boost",
+    "name": "MQD Earn on Purchases",
     "type": "info",
     "unitType": null,
     "totalPerCycle": null,
     "currency": null,
     "cycleRuleId": "annual-calendar",
     "enrollmentRequired": false,
-    "description": "Earn Medallion Qualification Dollars (MQDs) on purchases: $1 MQD per $10 spent on Delta, $1 MQD per $20 on all other purchases. Helps qualify for Medallion status."
+    "description": "Earn Medallion Qualification Dollars (MQDs) on card spend: $1 MQD per $10 on Delta purchases, $1 MQD per $20 on all other purchases. Contributes toward Silver, Gold, Platinum, or Diamond Medallion status."
+  },
+  {
+    "benefitId": "delta-reserve-priority",
+    "cardId": "delta-reserve-amex",
+    "name": "Priority Boarding & Check-In",
+    "type": "info",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": false,
+    "description": "Main Cabin 1 priority boarding on Delta flights plus access to the priority check-in lane when flying Delta."
   },
 
   {
@@ -531,7 +675,7 @@
     "currency": "USD",
     "cycleRuleId": "semiannual-calendar",
     "enrollmentRequired": true,
-    "description": "Up to $200 in airline fee credits per semiannual period (Jan–Jun and Jul–Dec). Select one qualifying airline per calendar year."
+    "description": "Up to $200 in airline fee credits per semiannual period (Jan–Jun and Jul–Dec), totaling up to $400/year. Select one qualifying airline per calendar year. Enrollment required."
   },
   {
     "benefitId": "hilton-aspire-resort-credit",
@@ -543,7 +687,7 @@
     "currency": "USD",
     "cycleRuleId": "quarterly-calendar",
     "enrollmentRequired": false,
-    "description": "Up to $200 in resort credits per quarter at participating Hilton Resorts. Applies automatically to eligible resort charges."
+    "description": "Up to $200 in resort credits per quarter (totaling up to $800/year) at participating Hilton Resorts worldwide. Applies automatically to eligible resort charges including dining, spa, and activities."
   },
   {
     "benefitId": "hilton-aspire-on-property",
@@ -555,7 +699,7 @@
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $100 in property credits per stay when booking a 2-night minimum stay through Hilton.com or the Hilton app."
+    "description": "Up to $100 in property credits per stay when booking a minimum 2-night stay directly at a participating Hilton property via Hilton.com or the Hilton app."
   },
   {
     "benefitId": "hilton-aspire-free-night",
@@ -567,7 +711,7 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "One free night reward certificate each cardmember year. Can be used at most Hilton properties worldwide. Additional free night for spending $60,000+ per year."
+    "description": "One free night reward certificate each cardmember year redeemable at most Hilton properties. Additional free night at $30,000 in spending, and another at $60,000+."
   },
   {
     "benefitId": "hilton-aspire-diamond-status",
@@ -579,19 +723,19 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": true,
-    "description": "Complimentary Hilton Honors Diamond status as long as card is held. Includes daily breakfast or F&B credit, room upgrades, executive lounge access, and 100% bonus points."
+    "description": "Complimentary Hilton Honors Diamond status while card is held: daily breakfast or F&B credit, room upgrades (suites when available), executive lounge access, 100% bonus points, 5th night free on award stays."
   },
   {
     "benefitId": "hilton-aspire-priority-pass",
     "cardId": "hilton-aspire",
-    "name": "Priority Pass Select",
+    "name": "Priority Pass Select (Unlimited)",
     "type": "info",
     "unitType": null,
     "totalPerCycle": null,
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": true,
-    "description": "Complimentary Priority Pass Select membership for unlimited lounge access at 1,300+ lounges worldwide."
+    "description": "Complimentary unlimited Priority Pass Select membership for access to 1,300+ airport lounges worldwide. Enrollment required through Amex benefits portal."
   },
   {
     "benefitId": "hilton-aspire-global-entry",
@@ -603,7 +747,19 @@
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $100 application fee credit for Global Entry or up to $85 for TSA PreCheck."
+    "description": "Up to $100 application fee credit for Global Entry or up to $85 for TSA PreCheck. Credit applies automatically when paid with card."
+  },
+  {
+    "benefitId": "hilton-aspire-national",
+    "cardId": "hilton-aspire",
+    "name": "National Car Rental Executive Status",
+    "type": "status",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": true,
+    "description": "Complimentary National Car Rental Emerald Club Executive status, letting you choose any car from the Executive or Emerald Aisle selection. Enrollment required through Amex."
   },
 
   {
@@ -616,7 +772,7 @@
     "currency": "USD",
     "cycleRuleId": "monthly-calendar",
     "enrollmentRequired": false,
-    "description": "Up to $25 per month in statement credits for restaurant purchases worldwide (excludes cafes, bars, and fast food at many properties)."
+    "description": "Up to $25 per month in statement credits for restaurant purchases worldwide. Credit applies automatically — up to $300/year total. Does not apply to fast food or in-hotel coffee shops."
   },
   {
     "benefitId": "marriott-brilliant-free-night",
@@ -628,19 +784,19 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "One free night award certificate each cardmember year redeemable at hotels costing up to 85,000 Marriott Bonvoy points per night."
+    "description": "One free night award certificate each cardmember year for properties up to 85,000 Marriott Bonvoy points per night. Additional free night at $60,000 in annual spending."
   },
   {
     "benefitId": "marriott-brilliant-priority-pass",
     "cardId": "marriott-brilliant",
-    "name": "Priority Pass Select",
+    "name": "Priority Pass Select (Unlimited)",
     "type": "info",
     "unitType": null,
     "totalPerCycle": null,
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": true,
-    "description": "Complimentary Priority Pass Select membership for unlimited lounge access at 1,300+ lounges worldwide."
+    "description": "Complimentary unlimited Priority Pass Select membership for access to 1,300+ airport lounges worldwide. Enrollment required through Amex benefits portal."
   },
   {
     "benefitId": "marriott-brilliant-global-entry",
@@ -652,7 +808,7 @@
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $100 application fee credit for Global Entry or up to $85 for TSA PreCheck."
+    "description": "Up to $100 application fee credit for Global Entry or up to $85 for TSA PreCheck. Credit applies automatically when paid with card."
   },
   {
     "benefitId": "marriott-brilliant-platinum-status",
@@ -664,7 +820,7 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": true,
-    "description": "Complimentary Marriott Bonvoy Platinum Elite status. Includes lounge access, room upgrades, enhanced Wi-Fi, and 50% bonus points on stays."
+    "description": "Complimentary Marriott Bonvoy Platinum Elite status: lounge access or welcome amenity, room upgrades when available, 4pm late checkout, enhanced Wi-Fi, and 50% bonus points on stays."
   },
   {
     "benefitId": "marriott-brilliant-on-property",
@@ -676,7 +832,19 @@
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $100 in property credits per stay when booking a 2-night minimum directly with participating Marriott Bonvoy properties."
+    "description": "Up to $100 in property credits per stay for dining, spa, or resort fees when booking a minimum 2-night stay directly at participating Marriott Bonvoy properties."
+  },
+  {
+    "benefitId": "marriott-brilliant-hertz",
+    "cardId": "marriott-brilliant",
+    "name": "Hertz President's Circle Status",
+    "type": "status",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": true,
+    "description": "Complimentary Hertz President's Circle status: guaranteed upgrades, priority service, and additional Hertz benefits. Enrollment required through Amex."
   },
 
   {
@@ -689,7 +857,7 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Full United Club membership for cardmember and immediate family (spouse/domestic partner and children under 21) or up to 2 adult guests traveling with cardmember."
+    "description": "Full United Club membership for cardmember and immediate family (spouse/domestic partner and children under 21) or up to 2 adult guests traveling with the cardmember. Includes Star Alliance partner lounge access."
   },
   {
     "benefitId": "united-club-first-bag",
@@ -701,7 +869,7 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "First and second checked bags free for cardmember and one companion on the same reservation when flying United."
+    "description": "First and second checked bags free for cardmember and one companion on the same reservation when flying United. Saves up to $70 per person round-trip."
   },
   {
     "benefitId": "united-club-global-entry",
@@ -713,10 +881,10 @@
     "currency": "USD",
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Up to $100 application fee credit for Global Entry or up to $85 for TSA PreCheck."
+    "description": "Up to $100 application fee credit for Global Entry or up to $85 for TSA PreCheck. Credit applies automatically when paid with card."
   },
   {
-    "benefitId": "united-club-premier-upgrades",
+    "benefitId": "united-club-premier-access",
     "cardId": "united-club",
     "name": "Premier Access & Upgrades",
     "type": "info",
@@ -725,10 +893,22 @@
     "currency": null,
     "cycleRuleId": "annual-cardmember",
     "enrollmentRequired": false,
-    "description": "Priority check-in, security screening, boarding, and baggage handling. Complimentary Premier Upgrades on United-operated flights when available."
+    "description": "Priority check-in, security screening, boarding, and baggage handling on United-operated flights. Plus complimentary Premier Upgrades on award tickets when available."
   },
   {
-    "benefitId": "united-club-25-pqp",
+    "benefitId": "united-club-inflight-credit",
+    "cardId": "united-club",
+    "name": "25% Back on United In-Flight Purchases",
+    "type": "info",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": false,
+    "description": "Receive 25% back as a statement credit on United in-flight purchases (food, beverages, Wi-Fi) when paid with your United Club card."
+  },
+  {
+    "benefitId": "united-club-pqp-boost",
     "cardId": "united-club",
     "name": "Premier Qualifying Points Boost",
     "type": "info",
@@ -737,6 +917,18 @@
     "currency": null,
     "cycleRuleId": "annual-calendar",
     "enrollmentRequired": false,
-    "description": "Earn 25 Premier Qualifying Points (PQPs) for every $500 spent on purchases, up to 1,000 PQPs per year toward United MileagePlus elite status."
+    "description": "Earn 25 Premier Qualifying Points (PQPs) per $500 spent on purchases, up to 1,000 PQPs per year toward United MileagePlus Silver, Gold, Platinum, or 1K elite status."
+  },
+  {
+    "benefitId": "united-club-hertz",
+    "cardId": "united-club",
+    "name": "Hertz President's Circle Status",
+    "type": "status",
+    "unitType": null,
+    "totalPerCycle": null,
+    "currency": null,
+    "cycleRuleId": "annual-cardmember",
+    "enrollmentRequired": true,
+    "description": "Complimentary Hertz President's Circle elite status: guaranteed upgrades, priority counter service, and additional perks at Hertz locations worldwide. Enrollment required through Chase."
   }
 ]

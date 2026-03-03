@@ -13,3 +13,24 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+.input {
+  width: 100%;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.75rem;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  color: #111827;
+  background: white;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.input:focus {
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+.input::placeholder {
+  color: #9CA3AF;
+}

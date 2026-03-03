@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react'
 import type { UserState } from '../types'
 import { reducer, type Action } from './reducers'
-import { migrate, CURRENT_VERSION } from './migrations'
+import { migrate, CURRENT_VERSION, defaultProfile } from './migrations'
 import { reconcileCycles } from '../core/cycleEngine'
 import cycleRulesData from '../data/cycleRules.json'
 import benefitsData from '../data/benefits.json'
@@ -19,6 +19,7 @@ const defaultState: UserState = {
   benefitSettings: [],
   cycleInstances: [],
   usageEntries: [],
+  profile: defaultProfile,
 }
 
 function loadState(): UserState {

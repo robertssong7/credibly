@@ -1,15 +1,23 @@
-import type { UserState } from '../types'
+import type { UserState, UserProfile } from '../types'
 
-export const CURRENT_VERSION = 1
+export const CURRENT_VERSION = 2
 
-/**
- * Apply incremental migrations to bring stored state up to current version.
- * Never mutates the input — always returns a new object.
- */
+export const defaultProfile: UserProfile = {
+  displayName: undefined,
+  membershipNumbers: {},
+  notifications: {
+    benefitExpiringDays: 7,
+    cycleResetReminder: true,
+    weeklyDigest: false,
+  },
+  display: {
+    showExpiredBenefits: false,
+  },
+}
+
 export function migrate(stored: Partial<UserState> & { version?: number }): UserState {
   let state = { ...stored } as UserState
 
-  // v0 → v1: initial schema (no prior version existed)
   if (!state.version || state.version < 1) {
     state = {
       version: 1,
@@ -18,11 +26,17 @@ export function migrate(stored: Partial<UserState> & { version?: number }): User
       benefitSettings: state.benefitSettings ?? [],
       cycleInstances: state.cycleInstances ?? [],
       usageEntries: state.usageEntries ?? [],
+      profile: defaultProfile,
     }
   }
 
-  // Future migrations go here:
-  // if (state.version < 2) { ... state.version = 2 }
+  if (state.version < 2) {
+    state = {
+      ...state,
+      version: 2,
+      profile: (state as UserState & { profile?: UserProfile }).profile ?? defaultProfile,
+    }
+  }
 
   return state
 }

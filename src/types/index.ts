@@ -20,6 +20,13 @@ export interface CycleRule {
   windows?: CycleWindow[]
 }
 
+export interface CardTheme {
+  from: string    // CSS color for gradient start
+  to: string      // CSS color for gradient end
+  text: 'light' | 'dark'
+  accent: string  // Hex color used for tabs, badges, buttons on this card
+}
+
 export interface CardDefinition {
   id: string
   display_name: string
@@ -27,6 +34,7 @@ export interface CardDefinition {
   issuer: string
   image_asset: string
   country: 'US'
+  theme: CardTheme
 }
 
 export interface BenefitTemplate {
@@ -42,12 +50,44 @@ export interface BenefitTemplate {
   description: string
 }
 
+// ─── User Profile / Settings Types ───────────────────────────────────────────
+
+export interface MembershipNumbers {
+  tsaPrecheck?: string
+  globalEntry?: string
+  nexus?: string
+  clear?: string
+  priorityPass?: string
+  centurion?: string
+  admiralsClub?: string
+  unitedClub?: string
+  deltaSkyClub?: string
+}
+
+export interface NotificationPrefs {
+  benefitExpiringDays: number  // alert N days before cycle ends; 0 = off
+  cycleResetReminder: boolean
+  weeklyDigest: boolean
+}
+
+export interface DisplayPrefs {
+  showExpiredBenefits: boolean
+}
+
+export interface UserProfile {
+  displayName?: string
+  membershipNumbers: MembershipNumbers
+  notifications: NotificationPrefs
+  display: DisplayPrefs
+}
+
 // ─── User State Types ─────────────────────────────────────────────────────────
 
 export interface UserCard {
   cardId: string
   enabled: boolean
   tabOrder: number
+  nickname?: string
   anniversaryMonth?: number  // 1-indexed; required for cardmember cadence
 }
 
@@ -79,6 +119,7 @@ export interface UserState {
   benefitSettings: UserBenefitSettings[]
   cycleInstances: CycleInstance[]
   usageEntries: UsageEntry[]
+  profile: UserProfile
 }
 
 // ─── Derived / UI Types ───────────────────────────────────────────────────────
